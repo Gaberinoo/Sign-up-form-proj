@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="img-container">
+        <img src="jack-bass-t_jjW_GJCFo-unsplash.jpg" alt="Beautiful mountain in the desert">
+    </div>
+    <main class="main-body">
+        <div class="header">
+            <p>This is not a real online service!
+                You know you need something like this
+                in your life to help you realize your
+                deepest dreams. Sign up <em>now</em>
+                to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-wrapper">
+            <form action="#">
+                <legend>Let's do this!</legend>
+                <span class="instruction">Fields with a * are required.</span>
+                <div class="name-field">
+                    <label for="name">First Name: *</label>
+                    <label for="last-name">Last Name: *</label>
+                    <input type="text" id="name" 
+                    pattern="^[a-zA-Z\s]+$"
+                    placeholder="Bobby"
+                    required>
+                    <input type="text" id="last-name" 
+                    pattern="^[a-zA-Z\s]+$"
+                    placeholder="Smith"
+                    required>
+                </div>
+                <div class="contact-field">
+                    <label for="email">Email: *</label>
+                    <label for="phone">Phone Number:</label>
+                    <input type="email" id="email" placeholder="me@mail.com" required>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="pwd-field">
+                    <label for="password">Password: *</label>
+                    <label for="confirm-pwd">Confirm Password: *</label>
+                    <input type="password" id="password" required>
+                    <input type="password" id="confirm-pwd" required>
+                </div>
+                <button>Create Account</button>
+            </form>
+        </div>
+        <p class="log-in">Already have an account?
+            <a href="#">Log In!</a>
+        </p>
+    </main>
+</body>
+
+</html>
